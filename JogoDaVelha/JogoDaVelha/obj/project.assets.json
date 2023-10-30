@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CarolFerraz\\Desktop\\AcademiaDotNet\\JogoDaVelha\\JogoDaVelha\\JogoDaVelha.csproj",
+      "projectUniqueName": "D:\\Cursos\\academiaDotNet\\AcademiaDotNet\\Desafios\\JogoDaVelha\\JogoDaVelha\\JogoDaVelha.csproj",
       "projectName": "JogoDaVelha",
-      "projectPath": "C:\\Users\\CarolFerraz\\Desktop\\AcademiaDotNet\\JogoDaVelha\\JogoDaVelha\\JogoDaVelha.csproj",
+      "projectPath": "D:\\Cursos\\academiaDotNet\\AcademiaDotNet\\Desafios\\JogoDaVelha\\JogoDaVelha\\JogoDaVelha.csproj",
       "packagesPath": "C:\\Users\\CarolFerraz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CarolFerraz\\Desktop\\AcademiaDotNet\\JogoDaVelha\\JogoDaVelha\\obj\\",
+      "outputPath": "D:\\Cursos\\academiaDotNet\\AcademiaDotNet\\Desafios\\JogoDaVelha\\JogoDaVelha\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CarolFerraz\\AppData\\Roaming\\NuGet\\NuGet.Config",
