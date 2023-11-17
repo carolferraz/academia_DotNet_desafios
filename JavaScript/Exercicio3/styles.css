@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(236, 236, 236);
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+#inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #181818;
+  max-width: 750px;
+  padding: 50px;
+  border-radius: 8px;
+  align-items: center;
+}
+h1 {
+  font-family: Verdana;
+  font-weight: 600;
+  color: white;
+}
+
+section a {
+  display: inline-block;
+	cursor:pointer;
+	padding:8px 32px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: verdana;
+}
+
+#red{
+  color: #fa9595;
+}
+#blue{
+  color: #7fc3d4;
+}
+#green{
+  color: #88e28d;
+}
+#yellow{
+  color: #fdff8f;
+}

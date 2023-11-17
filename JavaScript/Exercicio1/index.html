@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Clique para alterar a cor de fundo da tela</h1>
+        <form>
+          <button type="button" onClick="mudarCor('#fa9595')">Vermelho</button>
+          <button type="button" onClick="mudarCor('#88e28d')">Verde</button>
+          <button type="button" onClick="mudarCor('#7fc3d4')">Azul</button>
+          <button type="button" onClick="mudarCor('#fdff8f')">Amarelo</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function mudarCor(cor) {
+        document.body.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>

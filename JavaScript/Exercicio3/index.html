@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Selecione uma cor para mudar o fundo da tela:</h1>
+        <section id="inputs">
+          <input
+            type="radio"
+            id="red"
+            name="drone"
+            value="red"
+            onchange="mudarCor('#fa9595')"
+          />
+          <label id="red" for="red">Vermelho</label>
+
+          <input
+            type="radio"
+            id="green"
+            name="drone"
+            value="green"
+            onchange="mudarCor('#88e28d')"
+          />
+          <label id="green" for="green">Verde</label>
+
+          <input
+            type="radio"
+            id="blue"
+            name="drone"
+            value="blue"
+            onchange="mudarCor('#7fc3d4')"
+          />
+          <label id="blue" for="blue">Azul</label>
+
+          <input
+            type="radio"
+            id="yellow"
+            name="drone"
+            value="yellow"
+            onchange="mudarCor('#fdff8f')"
+          />
+          <label id="yellow" for="yellow">Amarelo</label>
+        </section>
+      </div>
+    </div>
+    <script>
+      function mudarCor(cor) {
+        document.body.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>

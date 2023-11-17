@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 9</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Cadastro de Usuário</h1>
+        <form onsubmit="return validarFormulario()">
+          <label for="login">Login:</label>
+          <input type="text" id="login" name="login" />
+          <span id="loginError" class="error"></span><br /><br />
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" />
+          <span id="senhaError" class="error"></span><br /><br />
+
+          <label for="confirmarSenha">Confirmar Senha:</label>
+          <input type="password" id="confirmarSenha" name="confirmarSenha" />
+          <span id="confirmarSenhaError" class="error"></span><br /><br />
+
+          <button type="submit" value="Cadastrar">Enviar </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
