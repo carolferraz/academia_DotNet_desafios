@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 7</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Aumentar ou diminuir a fonte</h1>
+        <p id="paragrafo">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga amet
+          laudantium id tenetur hic debitis molestiae facere minus doloremque
+          quae perferendis labore enim iusto numquam nam esse maiores, libero
+          maxime!
+        </p>
+        <button onclick="aumentarFonte()">Aumentar fonte</button>
+        <button onclick="diminuirFonte()">Diminuir fonte</button>
+      </div>
+    </div>
+    <script>
+      const paragrafo = document.getElementById("paragrafo");
+
+      function aumentarFonte() {
+        fonteAtual = window.getComputedStyle(paragrafo).fontSize;
+        fonte = parseFloat(fonteAtual) + 2;
+        paragrafo.style.fontSize = `${fonte}px`;
+      }
+
+      function diminuirFonte() {
+        fonteAtual = window.getComputedStyle(paragrafo).fontSize;
+        fonte = parseFloat(fonteAtual) - 2;
+        paragrafo.style.fontSize = `${fonte}px`;
+      }
+    </script>
+  </body>
+</html>

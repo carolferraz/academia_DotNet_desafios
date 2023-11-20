@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 7</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Altere o texto para letras maiúsculas ou minúsculas:</h1>
+        <p id="paragrafo">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga amet
+          laudantium id tenetur hic debitis molestiae facere minus doloremque
+          quae perferendis labore enim iusto numquam nam esse maiores, libero
+          maxime!
+        </p>
+        <button onclick="transformarParaMaiusculas()">Maiúsculas</button>
+        <button onclick="transformarParaMinusculas()">Minúsculas</button>
+      </div>
+    </div>
+    <script>
+      const paragrafo = document.getElementById("paragrafo");
+
+      function transformarParaMaiusculas() {
+        paragrafo.textContent = paragrafo.textContent.toUpperCase();
+      }
+  
+      function transformarParaMinusculas() {
+        paragrafo.textContent = paragrafo.textContent.toLowerCase();
+      }
+    </script>
+  </body>
+</html>

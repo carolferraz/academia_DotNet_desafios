@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="inner-container">
+    <h1>Alterar Cores de Texto e Fundo</h1>
+    <p id="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga amet laudantium id tenetur hic debitis molestiae facere minus doloremque quae perferendis labore enim iusto numquam nam esse maiores, libero maxime!</p>
+    <button onclick="trocarCorTexto('black')">Mudar texto para preto</button>
+    <button onclick="trocarCorTexto('white')">Mudar texto para branco</button>
+    <button onclick="trocarCorFundo('black')">Mudar fundo para preto</button>
+    <button onclick="trocarCorFundo('white')">Mudar fundo para preto</button>
+</div>
+</div>
+    <script>
+        const paragrafo = document.getElementById("paragrafo");
+
+        function trocarCorTexto(cor) {
+            cor === "preto" ? "branco" : "preto";
+            paragrafo.style.color = cor;
+        }
+
+        function trocarCorFundo(cor) {
+            cor === "branco" ? "preto" : "branco";
+            paragrafo.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>

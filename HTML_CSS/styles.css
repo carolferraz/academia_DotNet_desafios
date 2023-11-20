@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0 1rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 14px;
+}
+
+#logo{
+    max-width: 13%;
+    margin-right: 15rem;
+}
+
+a {
+ text-decoration: none;
+ color: #000;
+}
+
+#login{
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0; 
+    cursor: pointer; 
+    text-decoration: none; 
+    outline: none;
+    margin-right: 1rem;
+}
+
+#signup{
+    background: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: inherit;
+    font: inherit;
+    padding: 0.25rem; 
+    cursor: pointer; 
+    text-decoration: none; 
+    outline: none;
+}
+
+#ctaSection{
+    margin: 10rem 15rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#ctaSection img{
+    max-width: 40%;
+}
+#ctaSection div > * {
+    margin-top: 0.5rem;
+}
+#ctaSection div > p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+h1{
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-size: 45px;
+}
+
+#cta{
+    background: #F1A501;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Open Sans';
+    padding: 0.5rem; 
+    margin-top: 1rem !important;
+    cursor: pointer; 
+    text-decoration: none; 
+    outline: none;
+    width: 50%;
+}
+
+#cta:hover {
+    background: #DF6951;
+}
+
+#about{
+    margin: 7rem 5rem;
+    padding: 0 0 5rem;
+}
+#services{
+    display: flex;
+}
+
+#about p,  #about h2{
+    display: flex;
+    font-family: 'Open Sans';
+    justify-content: center;
+    margin: 0 6rem 0;
+}
+
+.card{
+    display: flex;
+    margin: 7px;
+    padding: 25px;
+    border-radius: 36px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover{
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.card p {
+    margin: 0 !important;
+}
+
+.card img {
+    margin-bottom: 1rem;
+}
+
+#booking{
+    margin: 5rem;
+}
+#booking h2{
+    display: flex;
+    font-family: 'Open Sans';
+    justify-content: center;
+    margin: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+th {
+    background-color: #DF6951;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF1DA;
+}
+
+.cta-booking {
+    text-decoration: none;
+    background-color: #F1A501;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gallery{
+    display: flex;
+    font-family: 'Open Sans';
+    justify-content: center;
+    margin-top: 5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imagesGallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 10rem 5rem;
+}
+
+.cardGallery{
+    width: 22rem;
+    height: 15rem; 
+    margin: 10px;
+    object-fit: fill;
+    border-radius: 36px;
+    box-shadow: inset 0 1px 20px 0px rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+}
+
+.cardGallery img{
+    width: 22rem;
+    height: 15rem; 
+    border-radius: 36px;
+}
+
+.cardGallery:hover{
+    cursor: pointer;
+    box-shadow: -1px 9px 11px 7px rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+}
+
+#contact{
+    background-color: #F1A501;
+    padding: 7rem 0;
+}
+#contact div{
+    margin: 0 5rem;
+    display: flex;
+    font-family: 'Open Sans';
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 35%;
+}
+
+input, textarea {
+    margin: 0.5rem 0 1rem;
+    border-radius: 5px;
+}
+
+.contactBtn{
+    text-decoration: none;
+    background-color: #DF6951;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.showMessage{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #DF6951;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    #ctaSection{
+        margin: 5rem;
+        gap: 1px;
+    }
+    #ctaSection img{
+        max-width: 50%;
+    }
+}

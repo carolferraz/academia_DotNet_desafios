@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>
+          Passe o mouse sobre o texto para alterar a cor de fundo da tela:
+        </h1>
+        <section>
+          <a id="red" href="#" onmouseover="mudarCor('#fa9595')">Vermelho</a>
+          <a id="blue" href="#" onmouseover="mudarCor('#7fc3d4')">Azul</a>
+          <a id="green" href="#" onmouseover="mudarCor('#88e28d')">Verde</a>
+          <a id="yellow" href="#" onmouseover="mudarCor('#fdff8f')">Amarelo</a>
+        </section>
+      </div>
+    </div>
+    <script>
+      function mudarCor(cor) {
+        document.body.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>

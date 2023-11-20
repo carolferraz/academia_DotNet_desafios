@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner-container">
+        <h1>Formulário de Sessão</h1>
+        <form class="formulario">
+          <section>
+            <input type="checkbox" name="checkbox1" id="checkbox1" /> Checkbox
+            1
+            <input type="checkbox" name="checkbox2" id="checkbox2" /> Checkbox
+            2
+            <input type="checkbox" name="checkbox3" id="checkbox3" /> Checkbox
+            3
+            <input type="checkbox" name="checkbox4" id="checkbox4" /> Checkbox
+            4
+          </section>
+          <button type="button" id="enviar" disabled>Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const enviarBotao = document.getElementById("enviar");
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", atualizarBotao);
+      });
+
+      function atualizarBotao() {
+        const selecionados = Array.from(checkboxes).filter(
+          (checkbox) => checkbox.checked
+        );
+        enviarBotao.disabled = selecionados.length < 2;
+      }
+    </script>
+  </body>
+</html>

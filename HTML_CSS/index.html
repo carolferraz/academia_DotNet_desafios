@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Travel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Volkhov:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <img src="./img/logo_gotravel.png" href="#home" id="logo" />
+          <a href="#about">Sobre</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#booking">Reserve</a>
+          <a href="#contact">Contato</a>
+          <div>
+            <button id="login">Login</button>
+            <button id="signup">Cadastre</button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="ctaSection">
+      <div>
+        <p>Melhores destinos ao redor do mundo</p>
+        <h1>Viaje, divirta-se <br />e viva novas experiências</h1>
+        <p>
+          Nossa equipe está sempre disponível para ajudar seja no planejamento
+          ou na realização da sua próxima aventura. Entre em contato com os
+          nossos consultores para montar a viagem dos seus sonhos!
+        </p>
+        <button id="cta" href="#contact">Entre em contato</button>
+      </div>
+      <img src="./img/cover.png" />
+    </section>
+
+    <section id="about">
+      <p>Sobre nós</p>
+      <h2>Oferecemos os melhores sorviços</h2>
+      <p>
+        A Go Travel é a sua porta de entrada para aventuras incríveis ao redor
+        do mundo. <br />
+        Desbravamos os destinos mais deslumbrantes e transformamos sonhos em
+        realidade. Confira os nossos serviços!
+      </p>
+      <div id="services">
+        <div class="card">
+          <img src="./img/conexion.png" />
+          <h4>Conexão fulltime</h4>
+          <p>
+            Nossa equipe está sempre disponível para solucionar suas demandas.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/bestFlights.png" />
+          <h4>Melhores vôos</h4>
+          <p>
+            Conseguimos os melhores horários com as conexões com menor espera.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/localEvents.png" />
+          <h4>Eventos locais</h4>
+          <p>
+            Vivencie aventuras inesquecíveis e conheça seu destino como os
+            locais.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/customize.png" />
+          <h4>Customização</h4>
+          <p>Receba serviço especializado conforme a sua necessidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Para onde será sua próxima viagem?</h2>
+      <div id="imagesGallery">
+        <div class="cardGallery">
+          <img src="./img/paris.jpg" alt="Paris" />
+        </div>
+        <div class="cardGallery">
+          <img src="./img/rio-de-janeiro.jpg" alt="Rio de Janeiro" />
+        </div>
+        <div class="cardGallery">
+          <img src="./img/toquio.jpg" alt="Toquio" />
+        </div>
+        <div class="cardGallery">
+          <img src="./img/santiago.jpg" alt="Santiago" />
+        </div>
+        <div class="cardGallery">
+          <img src="./img/mexico-city.jpg" alt="Cidade do Mexico" />
+        </div>
+        <div class="cardGallery">
+          <img src="./img/Buenos-Aires.jpg" alt="Buenos Aires" />
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Confira alguns destinos</h2>
+
+      <table>
+        <tr>
+          <th>Nome do Destino</th>
+          <th>Tempo de Viagem</th>
+          <th>Valor</th>
+          <th>Ação</th>
+        </tr>
+        <tr>
+          <td>Paris, França</td>
+          <td>5 dias</td>
+          <td>R$ 2.500</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Paris, França', '5 dias', 'R$ 2.500')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro, Brasil</td>
+          <td>7 dias</td>
+          <td>R$ 1.800</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Rio de Janeiro, Brasil', '7 dias', 'R$ 1.800')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Tóquio, Japão</td>
+          <td>10 dias</td>
+          <td>R$ 3.200</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Tóquio, Japão', '10 dias', 'R$ 3.200')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sydney, Austrália</td>
+          <td>12 dias</td>
+          <td>R$ 3.800</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Sydney, Austrália', '12 dias', 'R$ 3.800')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Santiago, Chile</td>
+          <td>7 dias</td>
+          <td>R$ 1.900</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Santiago, Chile', '7 dias', 'R$ 1.900')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Cidade do México, México</td>
+          <td>10 dias</td>
+          <td>R$ 2.800</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Cidade do México, México', '10 dias', 'R$ 2.800')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Buenos Aires, Argentina</td>
+          <td>12 dias</td>
+          <td>R$ 2.100</td>
+          <td>
+            <button
+              class="cta-booking"
+              onclick="purchase('Buenos Aires, Argentina', '12 dias', 'R$ 2.100')"
+            >
+              Contratar
+            </button>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact">
+      <div>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <button class="contactBtn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Go Travel | Desenvolvido com 🤍 por Carol Ferraz </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
